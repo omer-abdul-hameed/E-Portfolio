@@ -45,15 +45,19 @@ Array.from(navItems).forEach(navItem => {
     navItem.addEventListener('mouseover', () => {
         navItem.style.transition = 'transform 0.3s ease';
         navItem.style.transform = 'scale(1.4)';
+        navItem.style.fontStyle = 'italic'; 
         console.log('Nav item hovered');
     });
 
     navItem.addEventListener('mouseout', () => {
         navItem.style.transition = 'transform 0.3s ease';
         navItem.style.transform = 'scale(1)';
+        navItem.style.fontStyle = '';
         console.log('Nav item unhovered');
     });
 });
+
+
 //Current issue find a way to remove the event listeners to incorporate an if else statement that will only add the event listener if the page.innerwindow is greater than or equal to 992px.
 
 
