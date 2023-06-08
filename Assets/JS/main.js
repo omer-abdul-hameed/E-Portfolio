@@ -11,10 +11,10 @@ const observer = new IntersectionObserver((entries) => {
     //Go over each entry 
     entries.forEach((entry) => {
         console.log(entry)
-    //If an entry is intersecting in the view port then add class labeled show 
+        //If an entry is intersecting in the view port then add class labeled show 
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-    //Else remove class labeled show        
+            //Else remove class labeled show        
         } else {
             entry.target.classList.remove('show');
 
