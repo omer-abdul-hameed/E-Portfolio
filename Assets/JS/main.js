@@ -25,3 +25,39 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 //invoking the function for each HTML class labeled hidden
 hiddenElements.forEach((el) => observer.observe(el));
+
+//Add event listeners for Mouse Over to transform profile pic
+const profilePic = document.getElementById('pfp');
+profilePic.addEventListener('mouseover', () => {
+    profilePic.style.transition = 'transform 0.3s ease';
+    profilePic.style.transform = 'scale(1.1)';
+    console.log('Image hovered!');
+});
+
+profilePic.addEventListener('mouseout', () => {
+    profilePic.style.transition = 'transform 0.3s ease';
+    profilePic.style.transform = 'scale(1)';
+    console.log('Image unhovered!');
+});
+//Added event listeners by using an array iterator method to iterate over the array of all the elements with the class of nav items to appy an event listener that has style changes. 
+const navItems = document.getElementsByClassName('nav-item');
+Array.from(navItems).forEach(navItem => {
+    navItem.addEventListener('mouseover', () => {
+        navItem.style.transition = 'transform 0.3s ease';
+        navItem.style.transform = 'scale(1.4)';
+        console.log('Nav item hovered');
+    });
+
+    navItem.addEventListener('mouseout', () => {
+        navItem.style.transition = 'transform 0.3s ease';
+        navItem.style.transform = 'scale(1)';
+        console.log('Nav item unhovered');
+    });
+});
+//Current issue find a way to remove the event listeners to incorporate an if else statement that will only add the event listener if the page.innerwindow is greater than or equal to 992px.
+
+
+
+
+
+
