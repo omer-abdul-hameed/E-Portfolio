@@ -108,7 +108,7 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidebar-width);
-        background:linear-gradient(rgba(0, 63, 136,0.75),rgba(0, 63, 136,0.75)),url(../images/navvpic.jpg);
+        background:linear-gradient(rgba(0, 63, 136,0.75),rgba(0, 63, 136,0.75)),url(../Images/navvpic.jpg);
         background-size: cover;
         background-position: center;
     }
