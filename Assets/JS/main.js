@@ -41,9 +41,8 @@ profilePic.addEventListener('mouseout', () => {
 });
 //Added event listeners by using an array iterator method to iterate over the array of all the elements with the class of nav items to appy an event listener that has style changes. 
 const navItems = document.getElementsByClassName('nav-item');
-
-function addEventListeners() {
-  Array.from(navItems).forEach(navItem => {
+Array.from(navItems).forEach(navItem => {
+  if (window.innerWidth >= 992) {
     navItem.addEventListener('mouseover', () => {
       navItem.style.transition = 'transform 0.3s ease';
       navItem.style.transform = 'scale(1.4)';
@@ -57,27 +56,8 @@ function addEventListeners() {
       navItem.style.fontStyle = '';
       console.log('Nav item unhovered');
     });
-  });
-}
-
-function removeEventListeners() {
-  Array.from(navItems).forEach(navItem => {
-    navItem.removeEventListener('mouseover', () => {});
-    navItem.removeEventListener('mouseout', () => {});
-  });
-}
-
-function handleResize() {
-  if (window.innerWidth >= 992) {
-    addEventListeners();
-  } else {
-    removeEventListeners();
   }
-}
-
-window.addEventListener('resize', handleResize);
-handleResize(); // Call it initially to set the initial state based on the viewport width
-
+});
 
 
 //Current issue find a way to remove the event listeners to incorporate an if else statement that will only add the event listener if the page.innerwindow is greater than or equal to 992px.
