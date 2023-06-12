@@ -60,8 +60,6 @@ Array.from(navItems).forEach(navItem => {
 });
 
 
-//Current issue find a way to remove the event listeners to incorporate an if else statement that will only add the event listener if the page.innerwindow is greater than or equal to 992px.
-
 
 
 
