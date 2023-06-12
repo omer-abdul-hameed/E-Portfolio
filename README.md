@@ -28,6 +28,7 @@ As the user, I want to showcase my skills and personality on a webpage for every
 ![image info](./Assets/Images/wireframe1.jpg)
 ![image info](./Assets/Images/wireframe2.jpg)
 ![image info](./Assets/Images/wireframe3.jpg)
+![image info](./Assets/Images/draft1.jpeg)
 
 **Some problems and hurdles I faced were:**
 
